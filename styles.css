@@ -1,0 +1,87 @@
+/**************** GENERAL STYLINGS *********************/
+html {
+    font-size: 16px;
+}
+
+html .ui-autocomplete {
+    height: auto;
+    background-color: white;
+}
+
+html .ui-autocomplete div:hover{
+    background-color: lightblue;
+    user-select: none;
+
+}
+
+.ui-helper-hidden-accessible{
+    position: absolute;
+    left: -10000px;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+h3 {
+    font-size: 0.8em;
+}
+
+main li {
+    margin: 5px;
+    padding: 1px;
+    width: 100px;
+    margin-left: 5px;
+    font-size: 0.8em;
+}
+
+ul {
+    list-style: none;
+}
+
+ul,
+#unit-ranking .list-group-item {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.ui-autocomplete {
+    max-height: 100px;
+    overflow-x: hidden;
+}
+
+/**************** UNIT LISTINGS *********************/
+.sortable {
+    cursor: move;
+}
+
+main div {
+    float: left;
+}
+
+[id^='ordered']{
+    display: none;
+}
+
+[id^='ordered'] .list-group {
+    list-style: decimal inside;
+    max-height: 500px;
+}
+
+#unit-ranking,
+#unit-listing {
+    min-height: 100px;
+}
+
+#unit-ranking .list-group-item {
+    display: list-item;
+    background-color: #ccc;
+    padding: 5px;
+}

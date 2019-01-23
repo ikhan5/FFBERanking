@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">FFBE Rank</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a href="#" class="nav-link">Home <span class="sr-only">(current)</span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="md-form mt-0 mt-4 mb-3 mx-0 mx-auto col-md-8 col-xs-2">
+        <select id="unit-search" style="width: 100%">
+            <optgroup class="six-star" label="6 &#9733; Units">
+
+            </optgroup>
+            <optgroup class="seven-star" label="7 &#9733; Units">
+
+            </optgroup>
+        </select>
+    </div>
+
+
+    <nav class="navbar navbar-light bg-light">
+        <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+            <ul id="section-nav" class="nav navbar-nav">
+                <li class="nav-item"><a href="index.html?physical">Physical</a></li>
+                <li class="nav-item"><a href="index.html?mages">Mages</a></li>
+                <li class="nav-item"><a href="index.html?supports">Supports</a></li>
+                <li class="nav-item"><a href="index.html?tanks">Tanks</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="d-flex mx-auto mx-0">
+        <div id="full-unit-list listing" class="col-xs-1 col-sm-4">
+            <h2>Unit Listing</h2>
+            <ul id="unit-listing" class="list-group">
+
+            </ul>
+            <button id="delete" type="button" class="btn btn-warning btn-sm mt-2">Clear List</button>
+        </div>
+
+        <div class="col-sm-4 listing">
+            <!--Physical Sort-->
+            <h2>Unit Rankings</h2>
+            <div class="ui-widget-content" id="ordered-phys-chain">
+                <h3>Physical Chainers:</h3>
+                <ol id="unit-ranking" class="list-group">
+                        <li class="list-group-item placeholder">Rank the Units Here</li>
+                </ol>
+            </div>
+
+            <div class="ui-widget-content" id="ordered-phys-fin">
+                <h3>Physical Finishers:</h3>
+                <ol id="unit-ranking" class="list-group">
+                   
+                </ol>
+            </div>
+            <!--Mages Sort-->
+            <div class="ui-widget-content" id="ordered-mag-chain">
+                <h3>Magical Chainers:</h3>
+                <ol id="unit-ranking" class="list-group">
+                    
+                </ol>
+            </div>
+
+            <div class="ui-widget-content" id="ordered-mag-fin">
+                <h3>Magical Finisher:</h3>
+                <ol id="unit-ranking" class="list-group">
+                    
+                </ol>
+            </div>
+            <!--Support Sort-->
+            <div class="ui-widget-content" id="ordered-sup-heal">
+                <h3>Healers:</h3>
+                <ol id="unit-ranking" class="list-group">
+                    
+                </ol>
+            </div>
+
+            <div class="ui-widget-content" id="ordered-sup-buff">
+                <h3>Buffers:</h3>
+                <ol id="unit-ranking" class="list-group">
+                    
+                </ol>
+            </div>
+
+            <div class="ui-widget-content" id="ordered-sup-break">
+                <h3>Breakers:</h3>
+                <ol id="unit-ranking" class="list-group">
+                    
+                </ol>
+            </div>
+
+            <!--Tank Sort-->
+            <div class="ui-widget-content" id="ordered-tank-phys">
+                <h3>Physical Cover:</h3>
+                <ol id="unit-ranking" class="list-group">
+                    
+                </ol>
+            </div>
+
+            <div class="ui-widget-content" id="ordered-tank-mag">
+                <h3>Magical Cover:</h3>
+                <ol id="unit-ranking" class="list-group">
+                    
+                </ol>
+            </div>
+
+            <div class="ui-widget-content" id="ordered-tank-prov">
+                <h3>Provoke:</h3>
+                <ol id="unit-ranking" class="list-group">
+                    
+                </ol>
+            </div>
+
+
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="src/selectstyle.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
